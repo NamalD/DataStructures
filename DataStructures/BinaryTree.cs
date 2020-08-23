@@ -52,6 +52,10 @@ namespace DataStructures
                 .Concat(rightTraversal)
                 .Append(Root);
         }
+
+        /// <summary>
+        /// Apply a traversal function across left and right subtrees.
+        /// </summary>
         private (IEnumerable<Node<T>> left, IEnumerable<Node<T>> right) TraverseLeftRight(
             Func<BinaryTree<T>?, IEnumerable<Node<T>>?> traverse)
         {
